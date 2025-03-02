@@ -1,0 +1,151 @@
+
+
+@import url('/node_modules/@fortawesome/fontawesome-free/css/all.min.css');
+@import url('/node_modules/@flaticon/flaticon-uicons/css/all/all');
+
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@import url("/node_modules/primereact/resources/themes/lara-light-cyan/theme.css");
+
+@import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
+
+body,.p-component{
+    font-family: "Poppins", serif !important;
+}
+
+.italianno-regular {
+    font-family: "Italianno", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Dessau-regular {
+    font-family: "Dessau-Bold-Regular";
+}
+
+.hero-bg{
+    background: url('../public/assets/Images/Wallpaper/Wall_1.png') no-repeat;
+    background-size: cover;
+}
+
+@media  only screen and (min-width: 768px){
+    .slider-section-bg{
+        background: url('../public/assets/Images/Patten/patten_1.png') no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    
+}
+
+@media  only screen and (max-width: 767px){
+    .slider-section-bg{
+        background: linear-gradient(rgba(0, 0, 0, 0.601),rgba(0, 0, 0, 0.649)), url('../public/assets/Images/Patten/patten_4.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+    }
+    
+}
+
+.cart-bg{
+    background: url('../public/assets/Images/Patten/patten_1.png') no-repeat;
+    background-size: cover;
+}
+
+.p-slider.p-slider-horizontal .p-slider-handle {
+    margin-top: -0.5715rem;
+    margin-left: -0.5715rem;
+}
+
+.p-slider .p-slider-range {
+    background: #ed9d22;
+}
+
+.p-slider .p-slider-handle {
+    border: 2px solid #ed9d22;
+}
+
+.p-slider:not(.p-disabled) .p-slider-handle:hover {
+    background: #ed9d22;
+    border-color: #ed9d22;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.pointer, button{
+    cursor: pointer !important;
+}
+
+.chkcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+  
+  /* Hide the browser's default checkbox */
+.chkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    
+}
+  
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    
+    /* background-color: #000; */
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  
+.chkcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  
+.chkcontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+}
+
+.p-datatable .p-paginator-bottom {
+    border-radius: 30px !important;
+}
+
+
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
