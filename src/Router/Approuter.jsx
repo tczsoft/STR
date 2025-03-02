@@ -11,7 +11,6 @@ import ShopPage from "../Components/ShopPage/ShopPage";
 // import SignInPage from "../Components/SignInPage/SignInPage";
 import ReadblogPage from "../Components/ReadblogPage/ReadblogPage";
 
-
 export default function Approuter() {
     return (
         <>
