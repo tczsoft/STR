@@ -6,8 +6,9 @@ import { getproductbyID } from '../../shared/Services/products/apiProducts';
 import { useParams } from 'react-router-dom';
 import useCart from '../../shared/Services/store/useCart';
 import { Helmet } from 'react-helmet';
+import Readblog from '../../shared/Components/Readblog/Readblog';
 
-export default function ProductviewPage() {
+export default function ReadblogPage() {
 
   const param = useParams()
   const{addToCart,cartcount,currencyValue,curr} = useCart();
@@ -20,33 +21,33 @@ export default function ProductviewPage() {
   const [value,setvalue]=useState('')
   const [formdata,setFormdata]=useState({});
 
-  const getPodyctByID = useCallback(async()=>{
-    const res = await getproductbyID(param?.id);
-    console.log(res)
-    setschemaData({
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": res?.Product_Name,
-      "image": res?.Images.map(path => `${apiurl()}/${path}`),
-      "description": res.Product_Description,
-      "sku": '12',
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "price": res?.Sale_Price,
-        "availability": "https://schema.org/InStock"
-      }
-    })
+  // const getPodyctByID = useCallback(async()=>{
+  //   const res = await getproductbyID(param?.id);
+  //   console.log(res)
+  //   setschemaData({
+  //     "@context": "https://schema.org/",
+  //     "@type": "Product",
+  //     "name": res?.Product_Name,
+  //     "image": res?.Images.map(path => `${apiurl()}/${path}`),
+  //     "description": res.Product_Description,
+  //     "sku": '12',
+  //     "offers": {
+  //       "@type": "Offer",
+  //       "priceCurrency": "INR",
+  //       "price": res?.Sale_Price,
+  //       "availability": "https://schema.org/InStock"
+  //     }
+  //   })
 
-    setData(res);
-    setvalue(res?.Size[0]);
-    setImag(res?.Images); 
-    setLimg(res?.Images[0]);
-  },[param?.id])
+  //   setData(res);
+  //   setvalue(res?.Size[0]);
+  //   setImag(res?.Images); 
+  //   setLimg(res?.Images[0]);
+  // },[param?.id])
 
-  useEffect(()=>{
-    getPodyctByID();
-  },[param?.id])
+  // useEffect(()=>{
+  //   getPodyctByID();
+  // },[param?.id])
 
   const OpenModel = ()=>{
     setVisible(true)
@@ -74,21 +75,22 @@ export default function ProductviewPage() {
 
   return (
     <>
-      {data?.Product_Name&& <Helmet>
+      {/* {data?.Product_Name&& <Helmet>
         <meta charSet="utf-8" />
-        <title>Venba Boutique | {data!=undefined?data?.Product_Name:""}</title>
+        <title>STR | {data!=undefined?data?.Product_Name:""}</title>
         <meta name="description" content={data?.Product_Description} />
         <meta property="og:title" content={data?.Product_Name} />
         <meta property="og:image" content={apiurl()+'/'+data&&data?.Images[0]} />
         <link rel="canonical" href="https://www.venbaboutique.com" />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
-      </Helmet>}
+      </Helmet>} */}
     
-      <section className='py-16'>
-        <ProductView OpenModel={OpenModel} setData={setData} data={data} Limg={Limg} setLimg={setLimg} imag={imag} setImag={setImag} value={value} setvalue={setvalue} 
+      <section className='py-8'>
+        <Readblog />
+        {/* <ProductView OpenModel={OpenModel} setData={setData} data={data} Limg={Limg} setLimg={setLimg} imag={imag} setImag={setImag} value={value} setvalue={setvalue} 
           selSize={selSize} addCart={addCart} gotocheckout={gotocheckout} />
 
-        {Visible && <GalleryModel ModelData={data} setVisible={setVisible} Visible={Visible} />}
+        {Visible && <GalleryModel ModelData={data} setVisible={setVisible} Visible={Visible} />} */}
       </section>
     </>
   )

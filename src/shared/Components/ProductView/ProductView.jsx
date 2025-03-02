@@ -54,7 +54,6 @@ export default function ProductView(props) {
                                                             <i className="fa-solid fa-caret-right absolute left-[45%] top-[45%] fa-2xl text-gray-50"></i>
                                                             <video width="100%" ><source src={apiurl()+"/"+d} type="video/mp4" autoPlay loop/></video>
                                                         </div>:
-                                                        
                                                             <img loading="lazy" className='w-full h-full' src={apiurl()+"/"+d}/>
                                                         }
                                                     </div> 
