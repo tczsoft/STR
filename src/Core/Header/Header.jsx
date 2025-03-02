@@ -60,20 +60,20 @@ export default function Header() {
                         <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow lg:block" aria-labelledby="hs-navbar-example-collapse">
                             <div className="flex flex-col gap-5 mt-5 lg:flex-row lg:items-center lg:justify-end lg:mt-0 lg:ps-5">
                                 <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page">Home</Link>
-                                <Link to={'/latest'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page">All About STR</Link>
-                                <Link to={'/trand'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">About US</Link>
-                                <Link to={'/hot'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400  relative" href="#">Blog</Link>
-                                <Link to={'/login'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Videos</Link>
-                                <Link to={'/login'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Join Our STR Team</Link>
+                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page">All About STR</Link>
+                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">About US</Link>
+                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400  relative" href="#">Blog</Link>
+                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Videos</Link>
+                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Join Our STR Team</Link>
                             </div>
                         </div>
                     </nav>
                 </header>
                 <div className='w-full bg-[#2e3051]'>
                     <div className="flex gap-5 items-center justify-center py-2 text-center">
-                        <Link to={'/latest'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page"><div><i className="fi fi-rr-time-fast"></i></div> <div className='text-sm md:text-lg ms-2'>Latest</div></Link>
-                        <Link to={'/trand'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#"><i className="fi fi-br-arrow-trend-up"></i> <div className='text-sm md:text-lg ms-2'>Trand</div></Link>
-                        <Link to={'/hot'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#"><i className="fi fi-rr-fire-flame-curved"></i> <div className='text-sm md:text-lg ms-2'>Hot</div> </Link>
+                        <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page"><div><i className="fi fi-rr-time-fast"></i></div> <div className='text-sm md:text-lg ms-2'>Latest</div></Link>
+                        <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#"><i className="fi fi-br-arrow-trend-up"></i> <div className='text-sm md:text-lg ms-2'>Trand</div></Link>
+                        <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#"><i className="fi fi-rr-fire-flame-curved"></i> <div className='text-sm md:text-lg ms-2'>Hot</div> </Link>
                     </div>
                 </div>
             </div>
