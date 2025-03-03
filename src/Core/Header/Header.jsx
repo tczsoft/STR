@@ -57,6 +57,7 @@ export default function Header() {
                                 </button>
                             </div>
                         </div>
+                        
                         <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow lg:block" aria-labelledby="hs-navbar-example-collapse">
                             <div className="flex flex-col gap-5 mt-5 lg:flex-row lg:items-center lg:justify-end lg:mt-0 lg:ps-5">
                                 <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page">Home</Link>
