@@ -62,14 +62,14 @@ export default function Header() {
                                 <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page">Home</Link>
                                 <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page">All About STR</Link>
                                 <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">About US</Link>
-                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400  relative" href="#">Blog</Link>
+                                <Link to={'/blog'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400  relative" href="#">Blog</Link>
                                 <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Videos</Link>
-                                <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Join Our STR Team</Link>
+                                <Link to={'/join-our-team'} onClick={toggleMenu} className="pt-3 text-lg text-black flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#">Join Our STR Team</Link>
                             </div>
                         </div>
                     </nav>
                 </header>
-                <div className='w-full bg-[#2e3051]'>
+                <div className='w-full bg-[#d54f11]'>
                     <div className="flex gap-5 items-center justify-center py-2 text-center">
                         <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400" aria-current="page"><div><i className="fi fi-rr-time-fast"></i></div> <div className='text-sm md:text-lg ms-2'>Latest</div></Link>
                         <Link to={'/'} onClick={toggleMenu} className="pt-3 text-lg text-white flex hover:text-gray-400 focus:outline-none focus:text-gray-400 " href="#"><i className="fi fi-br-arrow-trend-up"></i> <div className='text-sm md:text-lg ms-2'>Trand</div></Link>

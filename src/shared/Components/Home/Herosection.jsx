@@ -50,7 +50,8 @@ export default function Herosection() {
                 
                 {/* Card */}
                 {newstories.map((Response,index)=>(
-                  <div key={index} className=" flex flex-col bg-white shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                  <div key={index} className=" flex flex-col bg-white shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70
+                   transition-transform duration-300 transform hover:scale-105">
                     <Link to={'/blog/new'}><img className="w-full h-auto rounded-t-xl" src="/assets/Images/Home/Img_2.jpg" alt="Card Image" /></Link>
                     <div className="relative p-4 md:p-5 rounded-b-2xl border-gray-300 border-b-1 border-l-1 border-r-1">
                       <span className="cursor-pointer inline-flex items-center gap-x-1.5 pt-1 px-2 rounded-full text-md font-medium bg-red-500 text-white absolute top-[-15px] left-[45%]"><i className="fi fi-rr-fire-flame-curved"></i></span>
@@ -69,7 +70,7 @@ export default function Herosection() {
 
               </div>
               <div className='text-center mt-5'>
-                <Link to={'/blog/new'} type="button" className="py-2 my-4 px-3 w-[70%] items-center gap-x-2 text-md font-medium rounded-md border border-transparent bg-[#2e3051] text-white hover:bg-[#2e3051] disabled:pointer-events-none">
+                <Link to={'/blog'} type="button" className="py-2 my-4 px-3 w-[70%] items-center gap-x-2 text-md font-medium rounded-md border border-transparent bg-[#2e3051] text-white hover:bg-[#2e3051] disabled:pointer-events-none">
                   LOAD MORE
                 </Link>
               </div>
@@ -80,7 +81,7 @@ export default function Herosection() {
 
               {/* Card */}
               {ourpicks.map((Response,index)=>(
-                <div key={index} className=" flex flex-col bg-white shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <div key={index} className=" transition-transform duration-300 transform hover:scale-105 flex flex-col bg-white shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
                   <Link to={'/blog/new'} ><img className="w-full h-auto rounded-t-xl" src="/assets/Images/Home/Img_2.jpg" alt="Card Image" /></Link>
                   <div className="relative p-4 md:p-5 rounded-b-2xl border-gray-300 border-b-1 border-l-1 border-r-1">
                     <span className="cursor-pointer inline-flex items-center gap-x-1.5 pt-1 px-2 rounded-full text-md font-medium bg-red-500 text-white absolute top-[-15px] left-[45%]"><i className="fi fi-rr-fire-flame-curved"></i></span>

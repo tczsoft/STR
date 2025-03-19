@@ -13,6 +13,11 @@ export const getAllproducts = async(data)=>{
    return res.data;
 }
 
+export const GeneratePDF = async(data)=>{
+   var res = await axios.get(`${apiurl()}/team/GeneratePDF`,data);
+   return res.data;
+}
+
 export const getsearchproducts = async(params)=>{
    var res=await axios.get(`${apiurl()}/products/searchproducts`,{params:params});
    return res.data;
